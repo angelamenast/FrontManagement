@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="571.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.unicauca.frontmanagement.controllers.ProfessorDashboardController">
+    <left>
+        <AnchorPane prefHeight="571.0" prefWidth="219.0" styleClass="sidebar" stylesheets="@DashboardStyle.css" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="40.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/perfil (1).png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="lblName" layoutX="14.0" layoutY="176.0" text="Nombre" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <HBox fx:id="bxMisDatos" alignment="CENTER" layoutY="251.0" onMouseClicked="#showMyData" prefHeight="55.0" prefWidth="235.0" styleClass="sidebar-btn" stylesheets="@DashboardStyle.css">
+                    <children>
+                        <Label text="Mis Datos" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </HBox>
+                <HBox fx:id="bxSubirFormato" alignment="CENTER" layoutY="306.0" onMouseClicked="#showUploadFormatA" prefHeight="55.0" prefWidth="234.0" styleClass="sidebar-btn" stylesheets="@DashboardStyle.css">
+                    <children>
+                        <Label text="Subir Formato A" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </HBox>
+                <HBox alignment="CENTER" layoutY="361.0" onMouseClicked="#mostrarResubirFormato" prefHeight="55.0" prefWidth="235.0" styleClass="sidebar-btn" stylesheets="@DashboardStyle.css">
+                    <children>
+                        <Label text="Resubir Formato" textAlignment="CENTER" textFill="WHITE">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </HBox>
+                <Button fx:id="btn_endSession" blendMode="SRC_ATOP" layoutX="58.0" layoutY="501.0" mnemonicParsing="false" onAction="#eventBtnEndSession" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: #B3191C; -fx-background-radius: 15;" text="Cerrar sesion" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane fx:id="anchrCenterPane" prefHeight="560.0" prefWidth="698.0" styleClass="center-pane" stylesheets="@DashboardStyle.css" BorderPane.alignment="CENTER" />
+    </center>
+</BorderPane>

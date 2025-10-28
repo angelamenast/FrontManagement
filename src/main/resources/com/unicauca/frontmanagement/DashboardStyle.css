@@ -1,0 +1,43 @@
+/*
+ * Empty Stylesheet file.
+ */
+.sidebar{
+    -fx-background-color: rgb(13, 65, 133);
+    -fx-border-color: rgb(21, 2, 189);
+}
+
+.sidebar-btn:hover{
+    -fx-background-color: rgb(6, 108, 201);
+}
+
+.top-pane{
+    -fx-background-color: rgb(194, 19, 34);
+    -fx-border-color: rgb(97, 97, 97);
+    -fx-border-radius: 0px 0px 15px 15px; 
+    -fx-background-radius: 0px 0px 15px 15px; 
+}
+
+.info-pane{
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-border-color: rgb(97, 97, 97);
+    -fx-border-radius: 10px 10px 10px 10px; 
+    -fx-background-radius: 10px 10px 10px 10px; 
+}
+
+.center-pane{
+    -fx-background-color: rgb(255, 255, 255);    
+}
+
+.text-field-info {
+    -fx-background-color: white;
+    -fx-border-color: #c0c0c0;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-padding: 4;
+}
+
+.text-field-info:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-border-color: #c0c0c0;
+}
