@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="560.0" prefWidth="698.0" styleClass="center-pane" stylesheets="@DashboardStyle.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.unicauca.FrontManagement.controllers.EvaluateFormatAController">
+    <children>
+        <VBox layoutX="-2.0" prefHeight="38.0" prefWidth="767.0" styleClass="top-pane" stylesheets="@DashboardStyle.css">
+            <children>
+                <HBox prefHeight="27.0" prefWidth="757.0">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <children>
+                        <Label text="Dashboard">
+                            <HBox.margin>
+                                <Insets left="30.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <Separator opacity="0.3" orientation="VERTICAL">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <padding>
+                                <Insets left="5.0" />
+                            </padding>
+                        </Separator>
+                        <Label text="Evaluación Formato A">
+                            <font>
+                                <Font name="System Bold Italic" size="15.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="5.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <Label fx:id="lblEmailStudent2" layoutX="59.0" layoutY="132.0" text="Correo Estudiante: ">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="58.0" layoutY="163.0" text="Nombre Director: ">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="59.0" layoutY="196.0" text="Tipo de Propuesta: ">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="58.0" layoutY="65.0" text="Nombre Propuesta: ">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnApprove" blendMode="SRC_ATOP" layoutX="549.0" layoutY="484.0" mnemonicParsing="false" onAction="#eventBtnApprove" prefHeight="30.0" prefWidth="142.0" style="-fx-background-color: #4AB021; -fx-background-radius: 15;" text="Aprobar Proyecto" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Label fx:id="lblProjectName" layoutX="240.0" layoutY="65.0" text="  ">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblEmail2" layoutX="237.0" layoutY="132.0" text="  ">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblDirectorName" layoutX="232.0" layoutY="163.0" text="  ">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblProjectType" layoutX="236.0" layoutY="196.0" text="  ">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnCancel" blendMode="SRC_ATOP" layoutX="51.0" layoutY="484.0" mnemonicParsing="false" onAction="#eventBtnCancel" prefHeight="30.0" prefWidth="142.0" style="-fx-background-color: #949D90; -fx-background-radius: 15;" text="Cancelar" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="btnDownloadFormatA" blendMode="SRC_ATOP" layoutX="510.0" layoutY="192.0" mnemonicParsing="false" onAction="#eventBtnDownloadFormatA" prefHeight="30.0" prefWidth="171.0" style="-fx-background-color: #3857C7; -fx-background-radius: 15;" text="Descargar FormatoA" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <ImageView fitHeight="136.0" fitWidth="119.0" layoutX="536.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/descargarArchivo.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="btnDecline" blendMode="SRC_ATOP" layoutX="383.0" layoutY="484.0" mnemonicParsing="false" onAction="#eventBtnDecline" prefHeight="30.0" prefWidth="142.0" style="-fx-background-color: #B3191C; -fx-background-radius: 15;" text="Rechazar Proyecto" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <ImageView fitHeight="133.0" fitWidth="106.0" layoutX="59.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/subirArchivo.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="btnUploadCorrection" blendMode="SRC_ATOP" layoutX="51.0" layoutY="393.0" mnemonicParsing="false" onAction="#eventBtnUploadCorrection" prefHeight="30.0" prefWidth="171.0" style="-fx-background-color: #3857C7; -fx-background-radius: 15;" text="Subir Correccion" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Label fx:id="lblEmailStudent1" layoutX="58.0" layoutY="97.0" text="Correo Estudiante: ">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblEmail1" layoutX="236.0" layoutY="97.0" text="  ">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
