@@ -18,7 +18,7 @@ public class HeadOfDepartamentFactory extends PersonFactory {
                 .phoneNumber(phone)
                 .program(program)
                 .user(user)
-                .suputamadre(extraAttribute)
+                .headShipStartDate(extraAttribute)
                 .build();
     }
 }

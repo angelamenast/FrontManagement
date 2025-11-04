@@ -18,7 +18,7 @@ public class CoordinatorFactory extends PersonFactory {
                 .phoneNumber(phone)
                 .program(program)
                 .user(user)
-                .nombredelperro(extraAttribute)
+                .coordinationBeginDate(extraAttribute)
                 .build();
     }
 }

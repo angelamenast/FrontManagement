@@ -9,6 +9,6 @@ import lombok.experimental.SuperBuilder;
 public class Coordinator extends Person{
     @Getter
     @Setter
-    private String nombredelperro;
+    private String coordinationBeginDate;
 
 }

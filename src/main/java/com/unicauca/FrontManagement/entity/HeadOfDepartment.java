@@ -9,6 +9,6 @@ import lombok.experimental.SuperBuilder;
 public class HeadOfDepartment extends Person{
     @Getter
     @Setter
-    private String suputamadre;
+    private String headShipStartDate;
 
 }
